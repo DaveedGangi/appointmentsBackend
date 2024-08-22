@@ -1,0 +1,73 @@
+### Add a Mentor with Expertise and Premium Status
+POST http://localhost:3000/add-mentor
+Content-Type: application/json
+
+{
+    "name": "John Doe",
+    "expertise": ["E-Commerce", "Sales"],
+    "premium": true
+}
+
+### Add a Student with Area of Interest
+POST http://localhost:3000/add-student
+Content-Type: application/json
+
+{
+    "name": "Jane Smith",
+    "area_of_interest": "Sales"
+}
+
+
+### Book an Appointment with Payment
+POST http://localhost:3000/book-appointment
+Content-Type: application/json
+
+{
+    "student_id": 1,
+    "mentor_id": 1,
+    "date": "2024-08-22",
+    "start_time": "09:00",
+    "duration": 45,
+    "amount": 3000
+}
+
+### get all appointments
+GET http://localhost:3000/appointments
+
+### get all payments
+GET http://localhost:3000/payments
+
+### get all mentors
+
+GET http://localhost:3000/mentors
+
+### get all students
+
+GET http://localhost:3000/students
+
+
+### delete all students
+
+DELETE http://localhost:3000/students
+
+### delete all mentors
+
+DELETE http://localhost:3000/mentors
+
+
+### delete all appointments
+
+DELETE http://localhost:3000/appointments
+
+### delete all payments
+
+DELETE http://localhost:3000/payments
+
+### delete a mentor
+
+DELETE http://localhost:3000/mentors/1
+
+### delete a student
+
+DELETE http://localhost:3000/students/1
+
