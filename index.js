@@ -3,7 +3,13 @@ const sqlite3 = require('sqlite3').verbose();
 const bodyParser = require('body-parser');
 const path = require('path');
 
+
+
 const app = express();
+
+const cors = require("cors");
+
+app.use(cors());
 app.use(bodyParser.json());
 
 // Connect to SQLite database using the sessions.db file
